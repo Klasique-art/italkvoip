@@ -23,7 +23,7 @@ import androidx.annotation.UiThread
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.MutableLiveData
 import org.linphone.utils.AppUtils
-import org.linphone.R
+import com.italkvoip.app.R
 
 class CodecModel
     @WorkerThread

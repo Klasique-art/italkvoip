@@ -29,10 +29,10 @@ import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.R
-import org.linphone.databinding.ChatBubbleSingleFileContentBinding
-import org.linphone.databinding.ChatMediaContentGridCellBinding
-import org.linphone.databinding.MeetingsListDecorationBinding
+import com.italkvoip.app.R
+import com.italkvoip.app.databinding.ChatBubbleSingleFileContentBinding
+import com.italkvoip.app.databinding.ChatMediaContentGridCellBinding
+import com.italkvoip.app.databinding.MeetingsListDecorationBinding
 import org.linphone.ui.main.chat.model.FileModel
 import org.linphone.utils.AppUtils
 import org.linphone.utils.HeaderAdapter

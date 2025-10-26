@@ -36,8 +36,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.linphone.R
-import org.linphone.databinding.ToastBinding
+import com.italkvoip.app.R                      // ← ALREADY HAVE THIS
+import com.italkvoip.app.databinding.ToastBinding  // ← ADD THIS LINE
 
 @UiThread
 fun View.slideInToastFromTop(

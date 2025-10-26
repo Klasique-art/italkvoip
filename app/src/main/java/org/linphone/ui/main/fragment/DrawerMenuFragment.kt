@@ -37,11 +37,11 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.R
+import com.italkvoip.app.R
 import org.linphone.core.Account
 import org.linphone.core.tools.Log
-import org.linphone.databinding.AccountPopupMenuBinding
-import org.linphone.databinding.DrawerMenuBinding
+import com.italkvoip.app.databinding.AccountPopupMenuBinding
+import com.italkvoip.app.databinding.DrawerMenuBinding
 import org.linphone.ui.assistant.AssistantActivity
 import org.linphone.ui.main.MainActivity
 import org.linphone.ui.main.settings.fragment.AccountProfileFragmentDirections

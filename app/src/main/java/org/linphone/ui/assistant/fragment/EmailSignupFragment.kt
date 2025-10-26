@@ -27,9 +27,9 @@ import android.view.ViewGroup
 import androidx.annotation.UiThread
 import androidx.navigation.navGraphViewModels
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import org.linphone.R
+import com.italkvoip.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.AssistantEmailSignupFragmentBinding
+import com.italkvoip.app.databinding.AssistantEmailSignupFragmentBinding
 import org.linphone.ui.GenericFragment
 import org.linphone.ui.assistant.viewmodel.EmailSignupViewModel
 

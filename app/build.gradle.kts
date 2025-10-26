@@ -12,7 +12,7 @@ plugins {
     alias(libs.plugins.crashlytics)
 }
 
-val packageName = "org.linphone"
+val packageName = "com.italkvoip.app"
 val useDifferentPackageNameForDebugBuild = false
 
 val sdkPath = providers.gradleProperty("LinphoneSdkBuildDir").get()
@@ -91,15 +91,15 @@ task("linphoneSdkSource") {
 project.tasks.preBuild.dependsOn("linphoneSdkSource")
 
 android {
-    namespace = "org.linphone"
+    namespace = "com.italkvoip.app"
     compileSdk = 36
 
     defaultConfig {
         applicationId = packageName
         minSdk = 28
         targetSdk = 36
-        versionCode = 600019 // 6.00.019
-        versionName = "6.1.0-alpha"
+        versionCode = 1 
+        versionName = "1.0.0"
 
         manifestPlaceholders["appAuthRedirectScheme"] = packageName
 
@@ -235,9 +235,16 @@ dependencies {
     // To be able to parse native crash tombstone and print them with SDK logs the next time the app will start
     implementation(libs.google.protobuf)
 
+    // implementation(platform(libs.google.firebase.bom))
+    // implementation(libs.google.firebase.messaging)
+    // implementation(libs.google.firebase.crashlytics)
+
+    // Firebase - only if google-services.json exists
+if (firebaseCloudMessagingAvailable) {
     implementation(platform(libs.google.firebase.bom))
     implementation(libs.google.firebase.messaging)
     implementation(libs.google.firebase.crashlytics)
+}
 
     // https://github.com/coil-kt/coil/blob/main/LICENSE.txt Apache v2.0
     implementation(libs.coil)

@@ -35,9 +35,9 @@ import com.google.android.material.datepicker.DateValidatorPointForward
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
-import org.linphone.R
+import com.italkvoip.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.MeetingEditFragmentBinding
+import com.italkvoip.app.databinding.MeetingEditFragmentBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.main.fragment.SlidingPaneChildFragment
 import org.linphone.ui.main.meetings.viewmodel.ScheduleMeetingViewModel

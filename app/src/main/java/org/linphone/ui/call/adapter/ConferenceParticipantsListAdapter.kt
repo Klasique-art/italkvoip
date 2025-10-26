@@ -27,8 +27,8 @@ import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.R
-import org.linphone.databinding.CallConferenceParticipantListCellBinding
+import com.italkvoip.app.R
+import com.italkvoip.app.databinding.CallConferenceParticipantListCellBinding
 import org.linphone.ui.call.conference.model.ConferenceParticipantModel
 
 class ConferenceParticipantsListAdapter :

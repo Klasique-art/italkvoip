@@ -28,9 +28,9 @@ import android.view.ViewGroup
 import androidx.annotation.UiThread
 import androidx.lifecycle.ViewModelProvider
 import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.R
+import com.italkvoip.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.CallIncomingFragmentBinding
+import com.italkvoip.app.databinding.CallIncomingFragmentBinding
 import org.linphone.ui.call.viewmodel.CurrentCallViewModel
 import org.linphone.utils.AppUtils
 import kotlin.math.max

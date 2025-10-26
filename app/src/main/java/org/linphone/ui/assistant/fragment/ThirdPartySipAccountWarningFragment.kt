@@ -27,9 +27,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.UiThread
 import androidx.navigation.fragment.findNavController
-import org.linphone.R
+import com.italkvoip.app.R
 import org.linphone.core.tools.Log
-import org.linphone.databinding.AssistantThirdPartySipAccountWarningFragmentBinding
+import com.italkvoip.app.databinding.AssistantThirdPartySipAccountWarningFragmentBinding
 import org.linphone.ui.GenericFragment
 import androidx.core.net.toUri
 

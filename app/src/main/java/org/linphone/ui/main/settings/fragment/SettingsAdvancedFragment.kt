@@ -27,8 +27,8 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.annotation.UiThread
 import androidx.lifecycle.ViewModelProvider
-import org.linphone.R
-import org.linphone.databinding.SettingsAdvancedFragmentBinding
+import com.italkvoip.app.R
+import com.italkvoip.app.databinding.SettingsAdvancedFragmentBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.main.fragment.GenericMainFragment
 import org.linphone.ui.main.settings.viewmodel.SettingsViewModel

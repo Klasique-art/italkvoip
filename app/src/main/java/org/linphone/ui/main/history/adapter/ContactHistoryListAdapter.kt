@@ -27,8 +27,8 @@ import androidx.lifecycle.findViewTreeLifecycleOwner
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.linphone.R
-import org.linphone.databinding.HistoryCallListCellBinding
+import com.italkvoip.app.R
+import com.italkvoip.app.databinding.HistoryCallListCellBinding
 import org.linphone.ui.main.history.model.CallLogHistoryModel
 
 class ContactHistoryListAdapter : ListAdapter<CallLogHistoryModel, RecyclerView.ViewHolder>(

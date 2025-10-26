@@ -36,11 +36,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import org.linphone.LinphoneApplication.Companion.coreContext
-import org.linphone.R
+import com.italkvoip.app.R
 import org.linphone.core.Participant
 import org.linphone.core.tools.Log
-import org.linphone.databinding.CallConferenceParticipantsListFragmentBinding
-import org.linphone.databinding.CallConferenceParticipantsListPopupMenuBinding
+import com.italkvoip.app.databinding.CallConferenceParticipantsListFragmentBinding
+import com.italkvoip.app.databinding.CallConferenceParticipantsListPopupMenuBinding
 import org.linphone.ui.GenericActivity
 import org.linphone.ui.call.adapter.ConferenceParticipantsListAdapter
 import org.linphone.ui.call.fragment.GenericCallFragment
