@@ -153,6 +153,8 @@ android {
             }
             resValue("string", "linphone_app_version", gitVersion.trim())
             resValue("string", "linphone_app_branch", gitBranch.toString().trim())
+            resValue("string", "linphone_sdk_version", "5.5.0")  // ← ADD THIS
+            resValue("string", "linphone_sdk_branch", "master")  // ← ADD THIS
             resValue("string", "linphone_openid_callback_scheme", packageName)
 
             if (crashlyticsAvailable) {
@@ -176,6 +178,8 @@ android {
             resValue("string", "file_provider", "$packageName.fileprovider")
             resValue("string", "linphone_app_version", gitVersion.trim())
             resValue("string", "linphone_app_branch", gitBranch.toString().trim())
+            resValue("string", "linphone_sdk_version", "5.5.0")  // ← ADD THIS
+            resValue("string", "linphone_sdk_branch", "master")  // ← ADD THIS
             resValue("string", "linphone_openid_callback_scheme", packageName)
 
             if (crashlyticsAvailable) {

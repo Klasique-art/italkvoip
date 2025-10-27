@@ -41,6 +41,7 @@ import androidx.core.text.isDigitsOnly
 import androidx.lifecycle.MutableLiveData
 import kotlin.system.exitProcess
 import com.italkvoip.app.BuildConfig
+import com.italkvoip.app.R
 import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.compatibility.Compatibility
@@ -76,8 +77,8 @@ class CoreContext
 
     @get:AnyThread
     val sdkVersion: String by lazy {
-        val sdkVersion = context.getString(R.string.linphone_sdk_version)
-        val sdkBranch = context.getString(R.string.linphone_sdk_branch)
+        val sdkVersion = context.getString(com.italkvoip.app.R.string.linphone_sdk_version)
+        val sdkBranch = context.getString(com.italkvoip.app.R.string.linphone_sdk_branch)
         val sdkBuildType = org.linphone.core.BuildConfig.BUILD_TYPE
         "$sdkVersion ($sdkBranch, $sdkBuildType)"
     }
@@ -1120,8 +1121,8 @@ class CoreContext
         val appName = context.getString(com.italkvoip.app.R.string.app_name)
         val androidVersion = BuildConfig.VERSION_NAME
         val userAgent = "${appName}Android/$androidVersion ($deviceName) LinphoneSDK"
-        val sdkVersion = context.getString(R.string.linphone_sdk_version)
-        val sdkBranch = context.getString(R.string.linphone_sdk_branch)
+        val sdkVersion = context.getString(com.italkvoip.app.R.string.linphone_sdk_version)
+        val sdkBranch = context.getString(com.italkvoip.app.R.string.linphone_sdk_branch)
         val sdkUserAgent = "$sdkVersion ($sdkBranch)"
         core.setUserAgent(userAgent, sdkUserAgent)
     }
@@ -1161,9 +1162,9 @@ class CoreContext
     @WorkerThread
     private fun configurationMigration5To6() {
         val policy = core.videoActivationPolicy.clone()
-        policy.automaticallyInitiate = false
+        policy.automaticallyInitiate = true
         policy.automaticallyAccept = true
-        policy.automaticallyAcceptDirection = MediaDirection.RecvOnly
+        policy.automaticallyAcceptDirection = MediaDirection.SendRecv
         core.videoActivationPolicy = policy
         Log.i(
             "$TAG Updated video activation policy to disable auto initiate, enable auto accept with media direction RecvOnly"
